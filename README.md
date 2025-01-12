@@ -26,27 +26,6 @@ Before you start installing this project’s dependencies with pip, you’ll nee
 
 Before you start installing this project’s dependencies with pip, you’ll need to ensure that you have CMake and a C compiler like gcc installed on your system.
 
-Any time you’re working on a Python project that uses external dependencies you’re installing with pip, it’s best to first create a virtual environment:
-py -m venv venv\
-This command allows the Python launcher for Windows to select an appropriate version of Python to execute. It comes bundled with the official installation and is the most convenient way to execute Python on Windows.
-You can bypass the launcher and run the Python executable directly using the python command, but if you haven’t configured the PATH and PATHEXT variables, then you might need to provide the full path:
-PS> C:\Users\Name\AppData\Local\Programs\Python\Python312\python -m venv venv\
-The system path shown above assumes that you installed Python 3.12 using the Windows installer provided by the Python downloads page. The path to the Python executable on your system might be different. Working with PowerShell, you can find the path using the where.exe python command.
-Note: You don’t need to include the backslash (\) at the end of the name of your virtual environment, but it’s a helpful reminder that you’re creating a folder.
-This command creates a new virtual environment named venv using Python’s built-in venv module. The first venv that you use in the command specifies the module, and the second venv/ sets the name for your virtual environment. You could name it differently, but calling it venv is a good practice for consistency.
-
-Great! Your project now has its own virtual environment. Generally, before you start to use it, you’ll activate the environment by executing a script that comes with the installation:
-PS> venv\Scripts\activate
-(venv) PS>
-
-After you’ve created and activated your virtual environment, you can install any external dependencies that you need for your project:
-(venv) PS> python -m pip install <package-name>
-
-Once you’re done working with this virtual environment, you can deactivate it:
-(venv) PS> deactivate
-PS>
-
-
 To install CMake on Windows, visit the https://cmake.org/download/ page and install the appropriate installer for your system.
 
 You can’t get gcc as a stand-alone download for Windows, but you can install it as a part of the MinGW runtime environment through the Chocolatey package manager with the following command:
