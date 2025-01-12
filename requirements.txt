@@ -1,4 +1,26 @@
-dlib==19.24.0
-face-recognition==1.3.0
-numpy==1.24.2
-Pillow==9.4.0
+To install the libraries mentioned in your code snippet, you can use the following commands. Run these commands in your terminal or command prompt:
+pip install streamlit
+pip install face_recognition
+pip install scikit-learn
+pip install pillow
+
+
+These are standard Python libraries and do not require installation:
+1. os
+2. time
+3. collections
+4. tempfile
+5. pathlib 
+
+System Dependencies for face_recognition:
+The face_recognition library relies on dlib, which may require some system-level packages. Install these before proceeding:
+sudo apt-get install cmake
+sudo apt-get install libboost-all-dev
+
+On MacOS:
+brew install cmake
+
+After the dependencies are installed, run:
+pip install dlib
+
+pip install face_recognition
