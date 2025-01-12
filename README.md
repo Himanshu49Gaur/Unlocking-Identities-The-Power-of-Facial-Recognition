@@ -59,7 +59,8 @@ numpy==1.24.2
 Pillow==9.4.0
 
 
-
+To make Streamlit work we can use the follow command and steps : 
+"streamlit run appname.py" command in command line
 
 
 
