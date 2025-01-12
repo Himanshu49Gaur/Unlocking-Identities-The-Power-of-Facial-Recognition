@@ -31,15 +31,13 @@ To install CMake on Windows, visit the https://cmake.org/download/ page and inst
 You can’t get gcc as a stand-alone download for Windows, but you can install it as a part of the MinGW runtime environment through the Chocolatey package manager with the following command:
 PS> choco install mingw
 
-Mow open your favorite text editor to create your requirements.txt file:
-dlib==19.24.0
-face-recognition==1.3.0
-numpy==1.24.2
-Pillow==9.4.0
 
 
 To make Streamlit work we can use the follow command and steps : 
 "streamlit run appname.py" command in command line
+
+
+python -m pip install -r requirements.txt
 
 
 
