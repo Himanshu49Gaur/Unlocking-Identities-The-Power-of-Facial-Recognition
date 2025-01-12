@@ -37,9 +37,6 @@ To make Streamlit work we can use the follow command and steps :
 "streamlit run appname.py" command in command line
 
 
-python -m pip install -r requirements.txt
-
-
 
 
 
