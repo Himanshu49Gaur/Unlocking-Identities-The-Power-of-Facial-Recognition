@@ -24,3 +24,8 @@ After the dependencies are installed, run:
 pip install dlib
 
 pip install face_recognition
+
+
+
+To make Streamlit work we can use the follow command and steps : 
+"streamlit run appname.py" command in command line
