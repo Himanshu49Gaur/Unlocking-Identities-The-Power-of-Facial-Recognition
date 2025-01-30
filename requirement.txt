@@ -1,0 +1,10 @@
+streamlit
+pathlib
+face_recognition=1.3.0
+dlib=19.24.0
+pickle
+counter
+tempfile
+sklearn
+pillow=9.4.0
+numpy=1.24.2
