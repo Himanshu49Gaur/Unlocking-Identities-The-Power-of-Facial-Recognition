@@ -12,7 +12,7 @@ A Streamlit-based application for face detection and recognition using **HOG** a
 ## Installation
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/face-detection-app.git
+    git clone https://github.com/Himanshu49Gaur/face-detection-app.git
     cd face-detection-app
     ```
 2. Install the required dependencies:
@@ -74,14 +74,23 @@ Testing:
 
 Splits the dataset into training and test sets.
 Evaluates accuracy based on correctly recognized faces.
+
 Limitations
+
 Accuracy: Dependent on the quality and size of the training dataset.
+
 Performance: Face recognition using the CNN model may require more processing power.
+
 Future Enhancements
+
 Add support for live video face detection.
+
 Implement an option to adjust augmentation parameters.
+
 Support for additional face recognition models.
+
 License
+
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 
