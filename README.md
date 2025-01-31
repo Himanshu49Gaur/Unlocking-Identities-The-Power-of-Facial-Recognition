@@ -1,36 +1,88 @@
 ﻿# Unlocking-Identities-The-Power-of-Facial-Recognition
 
-Do you have a phone that you can unlock with your face? Have you ever wondered how that works? Have you ever wanted to build your own face recognizer? With Python, some data, and a few helper packages, you can create your very own. In this project, you’ll use face detection and face recognition to identify faces in a given image.
+A Streamlit-based application for face detection and recognition using **HOG** and **CNN** models. This app allows you to train models on custom datasets, detect faces in uploaded images, and evaluate the model's performance.
 
-To accomplish this feat, you’ll first use face detection, or the ability to find faces in an image. Then, you’ll implement face recognition, which is the ability to identify detected faces in an image. To that end, your program will do three primary tasks:
-1.Train a new face recognition model.
-2.Validate the model.
-3.Test the model.
+## Features
+- **Train Model**: Upload images organized by name in folders, and train the model to recognize faces.
+- **Detect Faces**: Upload an image to detect and recognize faces with bounding boxes and labels.
+- **Test Model**: Evaluate the model's accuracy on a test dataset.
+- **Data Augmentation**: Automatically augments training images for better accuracy.
+- **Real-time Feedback**: Displays results with face detection time.
 
-To build this face recognition application, you won’t need advanced linear algebra, deep machine learning algorithm knowledge, or even any experience with OpenCV, one of the leading Python libraries enabling a lot of computer vision work.
-Instead, you should have an intermediate-level understanding of Python. You should be comfortable with:
-1.Installing third-party modules with pip
-2.Using argparse to create a command-line interface
-3.Opening and reading files with pathlib
-4.Serializing and deserializing Python objects with pickle
+## Installation
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/yourusername/face-detection-app.git
+    cd face-detection-app
+    ```
+2. Install the required dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-First, create your project and data directories:
-PS> mkdir face_recognizer
-PS> cd face_recognizer
-PS> mkdir output
-PS> mkdir training
-PS> mkdir validation
+3. Run the app:
+    ```bash
+    streamlit run app.py
+    ```
 
-Running these commands creates a directory called face_recognizer/, moves to it, then creates the folders output/, training/, and validation/, which you’ll use throughout the project. Now you can create a virtual environment using the tool of your choice.
-Before you start installing this project’s dependencies with pip, you’ll need to ensure that you have CMake and a C compiler like gcc installed on your system.
+## Usage
+1. **Prepare Dataset**:
+   - Create a `training` folder.
+   - Add images organized in subfolders by name (e.g., `training/John/image1.jpg`).
 
-Before you start installing this project’s dependencies with pip, you’ll need to ensure that you have CMake and a C compiler like gcc installed on your system.
+2. **Train Model**:
+   - Navigate to the **Train Model** section in the app.
+   - Upload additional images if needed.
+   - Click the **Train Model** button to generate face encodings.
 
-To install CMake on Windows, visit the https://cmake.org/download/ page and install the appropriate installer for your system.
+3. **Detect Faces**:
+   - Navigate to the **Detect Faces** section.
+   - Upload an image for detection.
+   - View the results, including bounding boxes and detected names.
 
-You can’t get gcc as a stand-alone download for Windows, but you can install it as a part of the MinGW runtime environment through the Chocolatey package manager with the following command:
-PS> choco install mingw
+4. **Test Model**:
+   - Navigate to the **Test Model** section.
+   - Click the **Test Model** button to evaluate accuracy on a test dataset.
 
+## File Structure
+face-detection-app/ │ ├── app.py # Main Streamlit app file ├── training/ # Folder for training images ├── output/ # Folder for output files (e.g., encodings.pkl) ├── requirements.txt # Python dependencies └── README.md # Project documentation
+
+
+## Dependencies
+- Python 3.8+
+- Streamlit
+- face_recognition
+- scikit-learn
+- Pillow
+- pickle
+
+Install dependencies using:
+```bash
+pip install -r requirements.txt
+```
+
+How it Works
+Training:
+
+Extracts face encodings from images in the training dataset.
+Augments images to improve recognition accuracy.
+Detection:
+
+Detects faces in uploaded images.
+Matches detected faces with the trained dataset.
+Testing:
+
+Splits the dataset into training and test sets.
+Evaluates accuracy based on correctly recognized faces.
+Limitations
+Accuracy: Dependent on the quality and size of the training dataset.
+Performance: Face recognition using the CNN model may require more processing power.
+Future Enhancements
+Add support for live video face detection.
+Implement an option to adjust augmentation parameters.
+Support for additional face recognition models.
+License
+This project is licensed under the MIT License. See the LICENSE file for details.
 
 
 
