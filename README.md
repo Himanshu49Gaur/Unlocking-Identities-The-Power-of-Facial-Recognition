@@ -45,11 +45,17 @@ A Streamlit-based application for face detection and recognition using **HOG** a
    - Click the **Test Model** button to evaluate accuracy on a test dataset.
 
 ## File Structure
-face-detection-app/ │ 
+face-detection-app/ 
+│ 
+
 ├── app.py # Main Streamlit app file 
+
 ├── training/ # Folder for training images
+
 ├── output/ # Folder for output files (e.g., encodings.pkl)
+
 ├── requirements.txt # Python dependencies 
+
 └── README.md # Project documentation
 
 
