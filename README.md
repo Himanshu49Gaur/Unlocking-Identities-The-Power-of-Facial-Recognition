@@ -75,30 +75,30 @@ pip install -r requirements.txt
 How it Works
 Training:
 
-Extracts face encodings from images in the training dataset.
+1. Extracts face encodings from images in the training dataset.
 Augments images to improve recognition accuracy.
 Detection:
 
-Detects faces in uploaded images.
+2. Detects faces in uploaded images.
 Matches detected faces with the trained dataset.
 Testing:
 
-Splits the dataset into training and test sets.
+3. Splits the dataset into training and test sets.
 Evaluates accuracy based on correctly recognized faces.
 
 Limitations
 
-Accuracy: Dependent on the quality and size of the training dataset.
+1. Accuracy: Dependent on the quality and size of the training dataset.
 
-Performance: Face recognition using the CNN model may require more processing power.
+2. Performance: Face recognition using the CNN model may require more processing power.
 
 Future Enhancements
 
-Add support for live video face detection.
+1. Add support for live video face detection.
 
-Implement an option to adjust augmentation parameters.
+2. Implement an option to adjust augmentation parameters.
 
-Support for additional face recognition models.
+3. Support for additional face recognition models.
 
 License
 
