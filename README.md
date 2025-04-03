@@ -100,6 +100,8 @@ Future Enhancements
 
 3. Support for additional face recognition models.
 
+Collaborator : https://github.com/Abhinavmehra2004
+
 License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
